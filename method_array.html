@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Metode Array</title>
+</head>
+
+<body>
+    <script>
+        // Metode Array Filter
+        // filter() merupakan method array di JavaScript yang berfungsi untuk mencari semua elemen di dalam array yang sesuai dengan kriteria tertentu.
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let filteredNumbers = numbers.filter(function (num) {
+            return num % 2 === 0;
+        });
+
+        document.writeln(filteredNumbers); // [2, 4, 6, 8, 10]
+
+        // Metode Array forEach
+        // forEach() adalah sebuah method yang tersedia pada objek array pada javascript, yang digunakan untuk melakukan iterasi atau pengulangan pada setiap elemen dalam sebuah array dan menjalankan sebuah fungsi pada setiap elemen tersebut.
+
+        let fruits = ["Apple", "Banana", "Orange"];
+
+        fruits.forEach(function (fruits, index) {
+            document.writeln(`Index ${index}: ${fruits}`)
+        });
+
+        // Metode Array Join
+        // Metode array join() digunakan untuk menggabungkan semua elemen dalam sebuah array menjadi sebuah string. 
+
+        let fruits = ["apple", "banana", "orange"];
+        let fruitsString = fruits.join(", "); // menggabungkan elemen array dengan pemisah koma dan spasi
+        document.writeln(fruitsString); // output: "apple, banana, orange"
+
+        // Metode Array for in
+        // Metode for in adalah salah satu cara untuk melakukan iterasi (perulangan) pada setiap elemen yang terdapat dalam sebuah array.
+
+        let arr = [1, 2, 3, 4, 5];
+        for (let index in arr) {
+            document.writeln(index); // Output: 0, 1, 2, 3, 4
+            document.writeln(arr[Index]) // Output: 1, 2, 3, 4, 5
+        }
+
+        // Metode Array for of
+        // Metode for of pada array digunakan untuk melakukan iterasi pada setiap nilai atau element yang terdapat dalam sebuah array.
+
+        let arr = [1, 2, 3, 4, 5];
+        for (let value of arr) {
+            document.writeln(value); // Output: 1, 2, 3, 4, 5
+        }
+
+        // Metode Array Slice
+        // Metode slice() pada array digunakan untuk membuat sebuah array baru yang berisi sebagian elemen dari array asli. 
+
+        let arr = [1, 2, 3, 4, 5];
+        let slicedArr = arr.slice(1, 3); // membuat array baru dari elemen ke-2 hingga ke-4 (indeks 1 hingga 2)
+        document.writeln(slicedArr); // Output: [2, 3]
+        document.writeln(arr); // Output: [1, 2, 3, 4, 5]
+
+        // Metode Array Split
+        // Metode split() pada tipe data array digunakan untuk membagi sebuah string menjadi beberapa elemen array yang terpisah berdasarkan karakter pemisah tertentu. Metode ini mengembalikan array baru yang berisi potongan-potongan string yang terpisah.
+
+        let stringData = "Ini adalah contoh string"
+        let arrData = stringData.split(" ")
+        document.writeln(arrData)
+
+        // Metode Array Reverse
+        // Metode array reverse adalah metode bawaan dari objek array JavaScript yang digunakan untuk membalik urutan elemen dalam array. Metode ini tidak hanya mengubah urutan elemen dalam array, tetapi juga mengubah array itu sendiri.
+
+        let arr = [1, 2, 3, 4, 5];
+        arr.reverse();
+        document.writeln(arr); // Output: [5, 4, 3, 2, 1]
+
+    </script>
+</body>
+
+</html>
